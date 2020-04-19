@@ -1,0 +1,11 @@
+# basic options
+title: TMS Modeling Toolkit v1.0
+#author: xyz
+email: smakarov@mgh.harvard.edu nummenma@nmr.mgh.harvard.edu
+description: Download our software
+#twitter_username: __
+#github_username:  __
+
+# Build settings
+markdown: kramdown
+theme: minima

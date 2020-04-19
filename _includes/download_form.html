@@ -1,0 +1,133 @@
+
+
+
+<html>
+
+    
+    <head>
+        <title>TMS Modeling toolbox v1.0</title>
+    </head>
+    
+    <style>
+    
+        /* Style inputs with type="text", select elements and textareas */
+  input[type=text] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+        
+  input[type=email] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+        
+ input[type=checkbox] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+  button[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+img{
+    padding-bottom: 70px;
+    padding-top: 10px;
+        }
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 30px;
+}
+    
+    </style>
+
+    <body>
+        
+        <h1> <center> Software Toolkit for Transcranial Magnetic Stimulation Modeling Using Boundary Element Fast Multipole Method - Connectome Subject 110411</center></h1>
+        
+        <img src = "https://raw.githubusercontent.com/TMSCoreLab/TMS-Modeling-Website/master/Figure8.jpg" alt = "a) Computation geometry, position of the coil and observation line (coil centerline), and positions of three observation planes. b) Electric field distribution along the coil centerline.">
+        
+        <div class="container">
+        
+            <form name = "download-form">
+            
+                <h3>Download software</h3>
+                <label for="fname"> Your name</label>
+                <input type="text" name="name" placeholder = "Your name" required>
+                
+                <label for="email">Your email</label>
+                <input type="email" name="email" placeholder = "Your email" required>
+                
+                <label for="affiliation">Affiliation</label>
+                <input type="text" name="affiliation" placeholder = "Your affiliation" required>
+                
+                <label for="cbox">I have read and agree to the <a href="https://tmscorelab.github.io/TMS-Modeling-Website/Terms%20and%20Conditions.html">Terms and Conditions</a></label>
+                <input type="checkbox" name="checkbox" value="check" id="agree" required>
+                
+                <button type="submit">Download</button>
+            
+            </form>
+        
+        </div>
+
+    
+        
+         <script>
+         const scriptURL = 'https://script.google.com/macros/s/AKfycbwyHhQ1r8frqbVEHIl6-iN3a97A5RhG1at-ctS1gHKGCUfBNeE/exec'
+         const form = document.forms['download-form']
+         
+         
+            
+            
+         form.addEventListener('submit', e => {
+             e.preventDefault()
+             
+         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          
+          .then(response => console.log('Success!', response))
+          .then(window.open("https://github.com/TMSCoreLab/TMS-Base-Package-040120"));
+
+        })
+         
+       
+     
+        </script> 
+        
+
+    </body>
+
+
+
+</html>
