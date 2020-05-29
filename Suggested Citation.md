@@ -6,4 +6,5 @@ title: Suggested Citation
 
 As a reference citation, please use:
 
-Makarov et al 2020 J. Neural Eng. https://doi.org/10.1088/1741-2552/ab85b3
+Makarov et al. Boundary Element Fast Multipole Method for Enhanced Modeling of Neurophysiological Recordings
+id: TBME-00179-2020.R1 Accepted.
