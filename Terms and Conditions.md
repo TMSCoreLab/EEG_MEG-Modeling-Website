@@ -11,18 +11,9 @@ End user license agreement [v1.0 / April 1, 2020]
 
 3)  General terms (commercial use): The use of this software package (or any component of it) for commercial applications is prohibited (without a separate written agreement). Re-distribution of the software for commercial use is prohibited (without a separate written agreement).
 
-4)	Coil models: All the coil models included are approximate and while they may or may not reflect the geometries of commercially available TMS coils, the resulting computational electromagnetic field estimates may differ from their experimental values.
+4)	Citation: If using this toolbox in academic research, the following article is to be cited in the published articles and presentations:
 
-5)	Head/Body models: The human head/body model that is provided as a part of the toolbox distribution has been derived from a pre-existing dataset, and its usage in the context of this toolbox must adhere to the following citations*
+Makarov et al. Boundary Element Fast Multipole Method for Enhanced Modeling of Neurophysiological Recordings
+id: TBME-00179-2020.R1 Accepted.
 
-*Van Essen DC et al. E. The Human Connectome Project: A data acquisition perspective. NeuroImage. 2012; 62(4):2222–2231. doi: 10.1016/j.neuroimage.2012.02.018. PMID: 22366334. Online: https://db.humanconnectome.org 
-
-*Thielscher A, Antunes A, and Saturnino GB. Field modeling for transcranial magnetic stimulation: a useful tool to understand the physiological effects of TMS? IEEE EMBS 2015, Milano, Italy
-
-*Nielsen, J. D., Madsen, K. H., Puonti, O., Siebner, H. R., Bauer, C., Madsen, C. G., …, and Thielscher, A. (2018). Automatic skull segmentation from MR images for realistic volume conductor models of the head: Assessment of the state-of-the-art. NeuroImage, 174, 587-598.
-
-6)	Citation: If using this toolbox in academic research, the following article is to be cited in the published articles and presentations:
-
-Makarov et al 2020 J. Neural Eng. https://doi.org/10.1088/1741-2552/ab85b3
-
-7)	Updates: The authors reserve the right to update the software and the license agreement without further notice. Updating to a new software version implicates that the end user is agreeing to the updated license agreement that will be included as a part of the distribution package.
+5)	Updates: The authors reserve the right to update the software and the license agreement without further notice. Updating to a new software version implicates that the end user is agreeing to the updated license agreement that will be included as a part of the distribution package.
